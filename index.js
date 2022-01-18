@@ -38,14 +38,15 @@ function findFourth(numbers) {
   }
 
 // Q: What is the time complexity of of this solution?
-// ANSWER: O (log n)
+// ANSWER: O (1)
 
 // Q: Given an array of numbers, what is the space complexity of this function?
 // ANSWER:O (n)
 
 
 // Q: Could you come up with a solution that has a better time complexity? If so, write out that solution and note the time complexity. If not, why not?
-// ANSWER:
+// ANSWER:No the while loop would make the process longer
+
 
 
 // 3) -------------------------------------------------------
@@ -115,7 +116,7 @@ let newNumbersA = numbers.filter((num) => {
 // ANSWER:O(n)
 
 // Q: What is the space complexity of the filter higher-order function?
-// ANSWER: O(1)
+// ANSWER: O(n)
 
 
 // 8) -------------------------------------------------------
@@ -169,7 +170,7 @@ function printFirstTwoNames(array) {
 }
 
 // Q: What is the time complexity of the function? 
-// ANSWER:O(n)
+// ANSWER:O(1)
 
 
 
@@ -194,7 +195,7 @@ function arrInception(parentArr) {
     }
   }
   // Q: What is the space complexity of this function?
-  // ANSWER:O(n^2)
+  // ANSWER:O(n)
   
   
 // 14) You are challenged to find the squared value of each number in an array. This is not the best solution, but it is what you come up with anyway...
@@ -212,7 +213,7 @@ function getNumbersSquared(numbers) {
 }
 
 // Q: What is the space complexity of this function?
-// ANSWER:O(n^2)
+// ANSWER:O(n)
 
 
 // Q: Is it possible to improve this function's space complexity? If it is, write a new function below.
@@ -293,14 +294,13 @@ function countLettersRoundTwo(str) {
 
 
 // Q: Do these functions have the same space complexity?
-// ANSWER: No
+// ANSWER: ye
 
 
 // Q: What is the space complexity of each? 
 // ANSWER - countLetters:O(n)
-// ANSWER - countLettersRoundTwo:O(n^2)
+// ANSWER - countLettersRoundTwo:O(n)
 
 
 // Q: Explain how you came to your conclusions about the space complexity of each function. 
-// ANSWER: the first one  has less space complexity because it has the key already, therefore the function can loop through the array.
-// the second function must create the array for each letter in the string and then determine and count it.
+// ANSWER: each function is depending on the length of the string.
